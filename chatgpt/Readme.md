@@ -88,4 +88,7 @@
    
     The last step of a transformer is a softmax layer, which turns these scores into probabilities (that add to 1), where the highest scores correspond to the highest probabilities. Then, we can sample out of these probabilities for the next word. In the example below, the transformer gives the highest probability of 0.5 to “Once”, and probabilities of 0.3 and 0.2 to “Somewhere” and “There”. Once we sample, the word “once” is selected, and that’s the output of the transformer.
 
-
+#### Statquest
+![Embedding](img/sq_embedding.png)
+![Explaination](img/sq_explain.png)
+![EncoderDecoder](img/statquest_en_de.png)
