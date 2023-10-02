@@ -19,7 +19,7 @@
   various mathematical components to process and generate human-like text based on the patterns and relationships it has learned from large datasets
 
 #### Transformer Architecture
-![Transformer](chatgpt/img/transformer.png)
+![Transformer](img/transformer.png)
 
 #### Explanation
 #### Reference : https://medium.com/@amanatulla1606/transformer-architecture-explained-2c49e2257b4c
@@ -57,19 +57,19 @@
     Positional encoding
     Transformer block (several of these)
     Softmax
-![Transformer](chatgpt/img/architecture.png)
+![Transformer](img/architecture.png)
 
 #### Tokenization
-![Tokenization](chatgpt/img/token.png)
+![Tokenization](img/token.png)
 
 #### Embeddings
-![Embeddings](chatgpt/img/embedding.png)
+![Embeddings](img/embedding.png)
 
 #### Positional Encoding
-![Positional Encoding](chatgpt/img/positional_encoding.png)
+![Positional Encoding](img/positional_encoding.png)
 
 #### Transformer block
-![Transformer block](chatgpt/img/multi_transformer.png)
+![Transformer block](img/multi_transformer.png)
     
     - The attention component.
     Attention is a very useful technique that helps language models understand the context. In order to understand how attention works, consider the following two sentences:
@@ -77,12 +77,12 @@
     Sentence 1: The bank of the river.
     Sentence 2: Money in the bank.
     As you can see, the word ‘bank’ appears in both, but with different definitions. In sentence 1, we are referring to the land at the side of the river, and in the second one to the institution that holds money.
-![Attention](chatgpt/img/attention.png)
+![Attention](img/attention.png)
             
     The attention step used in transformer models is actually much more powerful, and it’s called multi-head attention. In multi-head attention, several different embeddings are used to modify the vectors and add context to them. Multi-head attention has helped language models reach much higher levels of efficacy when processing and generating text.
     - The feedforward component.
 #### Softmax
-![Softmax](chatgpt/img/softmax.png)
+![Softmax](img/softmax.png)
 
     Now that you know that a transformer is formed by many layers of transformer blocks, each containing an attention and a feedforward layer, you can think of it as a large neural network that predicts the next word in a sentence. The transformer outputs scores for all the words, where the highest scores are given to the words that are most likely to be next in the sentence.
    
