@@ -19,3 +19,72 @@
 
 #### Transformer Architecture
 ![Transformer](img/transformer.png)
+
+#### Explanation
+#### Reference : https://medium.com/@amanatulla1606/transformer-architecture-explained-2c49e2257b4c
+![Transformer Architecture](img/transformer1.png)
+    
+    - Transformer models are one of the most exciting new developments in machine learning. 
+    - They were introduced in the paper Attention is All You Need. 
+    - Transformers can be used to write stories, essays, poems, answer questions, translate between languages, chat with humans, and they can even pass exams that are hard for humans! 
+    - But what are they? You’ll be happy to know that the architecture of transformer models is not that complex, it simply is a concatenation of some very useful components, each of which has its own function.
+#### Example
+![Example](img/example.png)
+    
+    - what does a transformer do? Imagine that you’re writing a text message on your phone. 
+    - After each word, you may get three words suggested to you. For example, if you type “Hello, how are”, the phone may suggest words such as “you”, or “your” as the next word. Of course, if you continue selecting the suggested word in your phone, you’ll quickly find that the message formed by these words makes no sense. If you look at each set of 3 or 4 consecutive words, it may make sense, but these words don’t concatenate to anything with a meaning. This is because the model used in the phone doesn’t carry the overall context of the message, it simply predicts which word is more likely to come up after the last few. Transformers, on the other hand, keep track of the context of what is being written, and this is why the text that they write makes sense.
+
+    Command: Write a story.
+    Response: Once
+    
+    Next command: Write a story. Once
+    Response: upon
+    
+    Next command: Write a story. Once upon
+    Response: a
+    
+    Next command: Write a story. Once upon a
+    Response: time
+    
+    Next command: Write a story. Once upon a time
+    Response: there
+
+
+#### Important Blocks of transformer
+    Tokenization
+    Embedding
+    Positional encoding
+    Transformer block (several of these)
+    Softmax
+![Transformer](img/architecture.png)
+
+#### Tokenization
+![Tokenization](img/token.png)
+
+#### Embeddings
+![Embeddings](img/embedding.png)
+
+#### Positional Encoding
+![Positional Encoding](img/positional_encoding.png)
+
+#### Transformer block
+![Transformer block](img/multi_transformer.png)
+    
+    - The attention component.
+    Attention is a very useful technique that helps language models understand the context. In order to understand how attention works, consider the following two sentences:
+
+    Sentence 1: The bank of the river.
+    Sentence 2: Money in the bank.
+    As you can see, the word ‘bank’ appears in both, but with different definitions. In sentence 1, we are referring to the land at the side of the river, and in the second one to the institution that holds money.
+![Attention](img/attention.png)
+            
+    The attention step used in transformer models is actually much more powerful, and it’s called multi-head attention. In multi-head attention, several different embeddings are used to modify the vectors and add context to them. Multi-head attention has helped language models reach much higher levels of efficacy when processing and generating text.
+    - The feedforward component.
+#### Softmax
+![Softmax](img/softmax.png)
+
+    Now that you know that a transformer is formed by many layers of transformer blocks, each containing an attention and a feedforward layer, you can think of it as a large neural network that predicts the next word in a sentence. The transformer outputs scores for all the words, where the highest scores are given to the words that are most likely to be next in the sentence.
+   
+    The last step of a transformer is a softmax layer, which turns these scores into probabilities (that add to 1), where the highest scores correspond to the highest probabilities. Then, we can sample out of these probabilities for the next word. In the example below, the transformer gives the highest probability of 0.5 to “Once”, and probabilities of 0.3 and 0.2 to “Somewhere” and “There”. Once we sample, the word “once” is selected, and that’s the output of the transformer.
+
+
