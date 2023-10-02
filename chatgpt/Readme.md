@@ -1,9 +1,10 @@
 # Chat GPT
-#### The math behind ChatGPT, like its predecessor GPT-3, relies on a deep learning architecture called a Transformer. Transformers are a type of neural network architecture that has proven to be highly effective for various natural language processing tasks, including language generation, translation, and question answering.
+* The math behind ChatGPT, like its predecessor GPT-3, relies on a deep learning architecture called a Transformer. 
+* Transformers are a type of neural network architecture that has proven to be highly effective for various natural language processing tasks, including language generation, translation, and question answering.
+* Here's a simplified overview of the key mathematical components and concepts behind ChatGPT:
     
-#### Here's a simplified overview of the key mathematical components and concepts behind ChatGPT:
-    
-    1. Neural Networks: At the core of ChatGPT is a neural network. This network consists of layers of interconnected artificial neurons, each performing simple mathematical operations.
+    1. 'Neural Networks': At the core of ChatGPT is a neural network. This network consists of layers of 
+       interconnected artificial neurons, each performing simple mathematical operations.
     2. Embeddings: Words or tokens from the input text are first converted into numerical representations called embeddings. These embeddings are learned during training and capture the semantic meaning of the words or tokens.
     3. Self-Attention Mechanism: The heart of the Transformer architecture is the self-attention mechanism. It allows the model to weigh the importance of different parts of the input text when processing each word or token. This attention mechanism is computed through a series of mathematical operations.
     4. Multi-Head Attention: The self-attention mechanism is often used in multiple "heads" in parallel. Each head learns different relationships in the input data, and the results are combined to capture a richer context.
@@ -13,12 +14,12 @@
     8. Training: The model is trained using a large dataset of text, where the objective is to minimize a loss function that measures the difference between the model's predictions and the actual target text. This training involves a process called gradient descent, which adjusts the model's parameters to improve its performance.
     9. Fine-Tuning: Once pre-trained on a large dataset, models like ChatGPT can be fine-tuned on specific tasks or domains to improve their performance on those tasks.
     
-    The math involved in training and using ChatGPT is highly complex and relies on linear algebra, calculus, and optimization techniques. During inference (when you use the model to generate text), forward and backward passes through the network involve matrix multiplications, activation functions, and gradient computations.
-    
-    In summary, ChatGPT's math is grounded in deep learning principles and the Transformer architecture, which combines various mathematical components to process and generate human-like text based on the patterns and relationships it has learned from large datasets
+* The math involved in training and using ChatGPT is highly complex and relies on linear algebra, calculus, and optimization techniques. During inference (when you use the model to generate text), forward and backward passes through the network involve matrix multiplications, activation functions, and gradient computations.
+* In summary, ChatGPT's math is grounded in deep learning principles and the Transformer architecture, which combines 
+  various mathematical components to process and generate human-like text based on the patterns and relationships it has learned from large datasets
 
 #### Transformer Architecture
-![Transformer](img/transformer.png)
+![Transformer](chatgpt/img/transformer.png)
 
 #### Explanation
 #### Reference : https://medium.com/@amanatulla1606/transformer-architecture-explained-2c49e2257b4c
@@ -56,19 +57,19 @@
     Positional encoding
     Transformer block (several of these)
     Softmax
-![Transformer](img/architecture.png)
+![Transformer](chatgpt/img/architecture.png)
 
 #### Tokenization
-![Tokenization](img/token.png)
+![Tokenization](chatgpt/img/token.png)
 
 #### Embeddings
-![Embeddings](img/embedding.png)
+![Embeddings](chatgpt/img/embedding.png)
 
 #### Positional Encoding
-![Positional Encoding](img/positional_encoding.png)
+![Positional Encoding](chatgpt/img/positional_encoding.png)
 
 #### Transformer block
-![Transformer block](img/multi_transformer.png)
+![Transformer block](chatgpt/img/multi_transformer.png)
     
     - The attention component.
     Attention is a very useful technique that helps language models understand the context. In order to understand how attention works, consider the following two sentences:
@@ -76,12 +77,12 @@
     Sentence 1: The bank of the river.
     Sentence 2: Money in the bank.
     As you can see, the word ‘bank’ appears in both, but with different definitions. In sentence 1, we are referring to the land at the side of the river, and in the second one to the institution that holds money.
-![Attention](img/attention.png)
+![Attention](chatgpt/img/attention.png)
             
     The attention step used in transformer models is actually much more powerful, and it’s called multi-head attention. In multi-head attention, several different embeddings are used to modify the vectors and add context to them. Multi-head attention has helped language models reach much higher levels of efficacy when processing and generating text.
     - The feedforward component.
 #### Softmax
-![Softmax](img/softmax.png)
+![Softmax](chatgpt/img/softmax.png)
 
     Now that you know that a transformer is formed by many layers of transformer blocks, each containing an attention and a feedforward layer, you can think of it as a large neural network that predicts the next word in a sentence. The transformer outputs scores for all the words, where the highest scores are given to the words that are most likely to be next in the sentence.
    
