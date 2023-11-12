@@ -50,8 +50,13 @@
     
     Python - Anacoda python 3.11
     pip install -r requirements.txt
+    Analysis : Notebook - indexData.ipynb
     streamlit run searchApp.py
-
+### Product search
 ![Product Search](img/vectordb_web.png)
+
+### Model all-mpnet-base-v2 : https://www.sbert.net/docs/pretrained_models.html
 ![LLM model](img/vectordb_llm_model.png)
+
+
     
