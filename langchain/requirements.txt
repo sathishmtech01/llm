@@ -1,1 +1,9 @@
+langchain-core
+langchain-community
 langchain-groq
+langchain-anthropic
+langgraph
+langsmith
+tavily-python
+langgraph-checkpoint-sqlite
+
