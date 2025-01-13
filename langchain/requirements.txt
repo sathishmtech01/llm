@@ -6,4 +6,4 @@ langgraph
 langsmith
 tavily-python
 langgraph-checkpoint-sqlite
-
+langchain-openai
