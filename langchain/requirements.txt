@@ -7,3 +7,4 @@ langsmith
 tavily-python
 langgraph-checkpoint-sqlite
 langchain-openai
+langchain_experimental
