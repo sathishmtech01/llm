@@ -2,7 +2,7 @@
     streamlit run streamlit_app.py
 
 ### Complete requirements content
-    Built a Web app for hosipitalusing python and give one jira story
+    Built a Web app for hosipital using python 
 
 ![Langchain](img/app1.png)
 ![Langchain](img/app2.png)

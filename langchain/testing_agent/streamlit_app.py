@@ -66,7 +66,7 @@ if agent1:
     st.session_state.messages.append({"role": "assistant", "content": response})
 
 with st.sidebar.expander("Agent 2 - Code"):
-    file2 = st.text_input("enter file name ")
+    # file2 = st.text_input("enter file name ")
     agent2 = st.button("Execute Agent 2")
     feedback2 = st.text_input("user feedback ")
     feedbackagent2 = st.button("Execute with feedback")
@@ -110,7 +110,7 @@ if feedbackagent2:
     st.session_state.messages.append({"role": "assistant", "content": response})
 
 with st.sidebar.expander("Agent 3 - Test case"):
-    file3 = st.text_input("enter file name")
+    # file3 = st.text_input("enter file name")
     agent3 = st.button("Execute Agent 3")
     feedback3 = st.text_input("user feedback")
     feedbackagent3 = st.button("Execute with feedback ")
@@ -154,7 +154,7 @@ if feedbackagent3:
     st.session_state.messages.append({"role": "assistant", "content": response})
 
 with st.sidebar.expander("Agent 4 - Interpret"):
-    file4 = st.text_input("enter file name4")
+    # file4 = st.text_input("enter file name4")
     agent4 = st.button("Execute Agent 4")
     feedback4 = st.text_input("user feedback4")
     feedbackagent4 = st.button("Execute with feedback4")
