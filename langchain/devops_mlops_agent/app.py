@@ -15,14 +15,12 @@ if uploaded_file:
     logs_df['severity'] = logs_df.apply(lambda row: classify_severity(str(row)), axis=1)
     logs_df['team'] = logs_df.apply(lambda row: assign_team(str(row)), axis=1)
 
+    st.markdown("### 🧾 Full Logs with Severity & Routing")
+    st.dataframe(logs_df)
     selected_idx = st.selectbox("Select a log entry to analyze:", logs_df.index)
     selected_log = str(logs_df.loc[selected_idx].to_dict())
-
     if st.button("Get Recommendation from GPT 🔍"):
         with st.spinner("Thinking..."):
             result = get_recommendation(selected_log)
         st.markdown("### 🤖 GPT Recommendation")
         st.markdown(result)
-
-    st.markdown("### 🧾 Full Logs with Severity & Routing")
-    st.dataframe(logs_df)

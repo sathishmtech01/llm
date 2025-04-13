@@ -11,6 +11,9 @@
 
 ### Run the project
     
-
+    python 3.11
+    pip insatll -r requirement.txt
     streamlit run app.py
 
+### Stramlit App
+![App](img/app.png)
