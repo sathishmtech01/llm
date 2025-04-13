@@ -3,8 +3,8 @@ from log_parser import parse_logs
 from analyzer import classify_severity, assign_team
 from openai_agent import get_recommendation
 
-st.set_page_config(page_title="DevOps/MLOps Buddy", layout="wide")
-st.title("🚀 DevOps & MLOps Log Buddy!")
+st.set_page_config(page_title="Your Buddy", layout="wide")
+st.title("🚀 Your Buddy!")
 
 uploaded_file = st.file_uploader("Upload your log file", type=["json", "csv", "txt"])
 

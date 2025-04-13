@@ -15,5 +15,5 @@
     pip insatll -r requirement.txt
     streamlit run app.py
 
-### Stramlit App
+### Streamlit App
 ![App](img/app.png)
