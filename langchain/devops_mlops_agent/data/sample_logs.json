@@ -1,0 +1,12 @@
+[
+  {
+    "timestamp": "2025-04-13T12:34:56Z",
+    "service": "db",
+    "message": "DB connection failed for user admin on db01"
+  },
+  {
+    "timestamp": "2025-04-13T12:35:01Z",
+    "service": "auth",
+    "message": "User login timeout from IP 10.0.0.5"
+  }
+]
