@@ -16,4 +16,4 @@
     streamlit run app.py
 
 ### Streamlit App
-![App](img/app.png)
+![App1](img/app.png)
