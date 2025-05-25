@@ -4,3 +4,6 @@
 /langchain/.ipynb_checkpoints/
 /langchain/Langchain/.ipynb_checkpoints/
 /langchain/Langchain/tutorials/*/.ipynb_checkpoints/
+/langchain/testing_agent/.streamlit/
+/langchain/devops_mlops_agent/.env
+/langchain/devops_mlops_agent/.ipynb_checkpoints/

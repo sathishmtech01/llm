@@ -1,0 +1,8 @@
+
+path: dataset
+
+train: images/train1
+val: images/train1  # or use a val set if you have more data
+
+nc: 1
+names: ['bolt']
