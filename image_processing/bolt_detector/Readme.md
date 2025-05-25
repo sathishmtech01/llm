@@ -28,5 +28,12 @@
     image 5/5 /Users/sathishkumarchandran/IdeaProjects/llm/image_processing/bolt_detector/dataset/images/train1/bolt_5.jpg: 288x640 4 bolts, 34.5ms
     Speed: 1.2ms preprocess, 41.1ms inference, 0.3ms postprocess per image at shape (1, 3, 288, 640)
     Results saved to runs/detect/predict5
+    
+    bolt_detector.py -> image
+    bolt_detector_video.py -> video
+
+    0: 384x640 1 bolt, 42.1ms
+    Speed: 1.2ms preprocess, 42.1ms inference, 4.8ms postprocess per image at shape (1, 3, 384, 640)
+    [Frame 195] Bolt detected!
 
 
